@@ -1,0 +1,121 @@
+<resources>
+
+    <string name="app_name">Task your Android</string>
+    <string name="app_created">2012</string>
+    <string name="author">Nhut Do</string>
+    
+    <!-- ACTIVITY TITLES -->
+    <string name="title_activity_main">@string/app_name</string>
+    <string name="title_activity_action">Actions</string>
+    <string name="title_activity_schedule">Schedule task</string>
+    <string name="title_activity_add_edit_task">@string/app_name</string>
+    <string name="title_activity_user_guide">@string/app_name</string>
+    <string name="title_activity_settings">@string/app_name</string>
+        
+    <!-- GENERAL -->
+    <string name="menu_settings">Settings</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="view">View</string>
+    <string name="activate">Activate</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="button_ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="id">ID</string>
+    <string name="header">Header</string>
+    <string name="coming_soon">Coming soon&#8230;</string>
+    
+    <!-- TAB NAMES -->
+    <string name="tab_action">Actions</string>
+    <string name="tab_schedule_task">Schedule task</string>
+    
+    <!-- ACTION TAB -->
+    <string name="switch_profile">Profiles:</string>
+    <string name="button_mode_normal">Normal mode</string>
+    <string name="button_mode_silent">Silent mode</string>
+    <string name="button_mode_vibrate">Vibrate mode</string>
+    <string name="connectivity">Connectivity:</string>
+    <string name="connectivity_available">OK</string>
+    <string name="connectivity_no_available">NA</string>
+    <string name="button_internet_mobile">Mobile data</string>
+    <string name="button_internet_wifi">WiFi</string>
+    <string name="button_bluetooth">Bluetooth</string>
+    <string name="toast_profile_activated">Profile activated: %1$s</string>
+    <string name="toast_mobile_data_switched">Mobile data switched:</string>
+    <string name="toast_wifi_switched">Wifi switched:</string>
+    <string name="toast_wifi_switched_fail">Failed to switch state of Wifi:</string>
+    <string name="toast_bluetooth_switched">Bluetooth switched:</string>
+    
+    <!-- ENUMS (TASK) -->
+    <string name="TASK_NONE">--Choose--</string>
+    <string name="TASK_CHANGE_PROFILE_ACTIVE">Change to active profile</string>
+    <string name="TASK_CHANGE_PROFILE_SILENT">Change to mute profile</string>
+    <string name="TASK_CHANGE_PROFILE_VIBRATE">Change to vibrate profile</string>
+    <string name="TASK_CHANGE_PROFILE_PLANE">Change to plane profile</string>
+    <string name="TASK_ENABLE_MOBILE_DATA">Enable mobile data</string>
+    <string name="TASK_DISABLE_MOBILE_DATA">Disable mobile data</string>
+    <string name="TASK_ENABLE_WIFI">Enable Wifi</string>
+    <string name="TASK_DISABLE_WIFI">Disable Wifi</string>
+    <string name="TASK_ENABLE_BLUETOOTH">Enable bluetooth</string>
+    <string name="TASK_DISABLE_BLUETOOTH">Disable bluetooth</string>
+    <!-- ENUMS (REPEAT TYPE) -->
+    <string name="REPEAT_TYPE_MONDAY">Monday</string>
+    <string name="REPEAT_TYPE_MONDAY_S">Mon</string>
+    <string name="REPEAT_TYPE_TUESDAY">Tuesday</string>
+    <string name="REPEAT_TYPE_TUESDAY_S">Tue</string>
+    <string name="REPEAT_TYPE_WEDNESDAY">Wednesday</string>
+    <string name="REPEAT_TYPE_WEDNESDAY_S">Wed</string>
+    <string name="REPEAT_TYPE_THURSDAY">Thursday</string>
+    <string name="REPEAT_TYPE_THURSDAY_S">Thu</string>
+    <string name="REPEAT_TYPE_FRIDAY">Friday</string>
+    <string name="REPEAT_TYPE_FRIDAY_S">Fri</string>
+    <string name="REPEAT_TYPE_SATURDAY">Saturday</string>
+    <string name="REPEAT_TYPE_SATURDAY_S">Sat</string>
+    <string name="REPEAT_TYPE_SUNDAY">Sunday</string>
+    <string name="REPEAT_TYPE_SUNDAY_S">Sun</string>
+    
+    <!-- SCHEDULE TAB -->
+    <string name="button_add_new">Add a new task</string>
+    
+    <string name="select_task">Select task:</string>
+    <string name="set_date">Date:</string>
+    <string name="set_time">Set start time:</string>
+    <string name="select_repeat">Select repeat:</string>
+    <string name="select_repeat_none">Once</string>
+    <string name="select_repeat_days">Select repeat days:</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_delete">Delete</string>
+    <string name="scheduled">Scheduled:</string>
+    <string name="created">Created:</string>
+    <string name="repeat">Repeat:</string>
+    
+    <string name="task_create_success">New scheduled task created!</string>
+    <string name="task_create_fail">FAILED to create a task!</string>
+    <string name="task_edit_success">Task edited!</string>
+    <string name="task_edit_fail">FAILED to edit a task!</string>
+    <string name="task_deleted_success">Task ID %1$d deleted!</string>
+    <string name="task_activate_success">Scheduled task ID %1$d ACTIVATED!</string>
+    <string name="task_deactivate_success">Scheduled task ID %1$d DEACTIVATED!</string>
+    <string name="name">Name</string>
+    
+    <string name="notification_task_done">%1$s task executed.</string>
+    <string name="notification_task_done_title">%1$s (Task id=%2$d)</string>
+    
+    <!-- SETTINGS -->
+    <string name="menu_about">About&#8230;</string>
+    <string name="menu_about_message">%1$s\nDeveloped by %2$s (%3$s).</string>
+    
+    <string name="settings_notification_title">Notification</string>
+    <string name="settings_notification_executed_task">Executed task</string>
+    <string name="settings_notification_executed_task_summary">Notify me when task have been executed.</string>
+    
+    <string name="settings_task_title">Task</string>
+    <string name="settings_task_remove_when_done">Remove done task.</string>
+    <string name="settings_task_remove_when_done_summary">Remove task after execution. This only applies for run once repeat type.</string>
+    
+</resources>

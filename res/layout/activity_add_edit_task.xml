@@ -1,0 +1,184 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add_new"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginTop="10dp"
+            android:text="@string/select_task"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinnerTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewTask"
+            android:layout_toRightOf="@+id/textViewTask" />
+		
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textViewTask"
+            android:layout_below="@+id/spinnerTask"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewDate"
+            android:layout_toRightOf="@+id/textViewDate"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+        
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textViewTask"
+            android:layout_below="@+id/textViewDatePicker"
+            android:text="@string/set_time"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TimePicker
+            android:id="@+id/timePickerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewTime"
+            android:layout_toRightOf="@+id/textViewTime" />
+
+        <TextView
+            android:id="@+id/textViewRepeatType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/timePickerTime"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/timePickerTime"
+            android:text="@string/select_repeat"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <Button
+            android:id="@+id/buttonRepeatType"
+            style="buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timePickerTime"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewRepeatType"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="left|center"
+            android:onClick="doSelectTask"
+            android:text="@string/select_repeat_none" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/buttonRepeatType"
+            android:background="#708890"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="doSaveNewOrOld"
+                android:text="@string/button_save" />
+
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="doCancelAdd"
+                android:text="@string/button_cancel" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="doDelete"
+                android:text="@string/button_delete"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_toLeftOf="@+id/spinnerTask"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textViewName"
+            android:layout_toRightOf="@+id/textViewName"
+            android:ems="10"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+</ScrollView>

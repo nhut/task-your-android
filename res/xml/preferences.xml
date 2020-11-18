@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/settings_notification_title">
+        <CheckBoxPreference android:key="notifyTaskExecuted" android:title="@string/settings_notification_executed_task" android:summary="@string/settings_notification_executed_task_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_task_title">
+        <CheckBoxPreference android:key="removeTaskAfterExecution" android:title="@string/settings_task_remove_when_done" android:summary="@string/settings_task_remove_when_done_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

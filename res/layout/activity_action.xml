@@ -1,0 +1,171 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+
+
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/switch_profile"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp" >
+
+
+
+
+
+
+
+            <ToggleButton
+                android:id="@+id/ToggleButtonNormal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@android:drawable/ic_lock_silent_mode_off"
+                android:onClick="doChangeNormalMode"
+                android:text="@string/button_mode_normal"
+                android:textOff="@string/button_mode_normal"
+                android:textOn="@string/button_mode_normal" />
+
+
+
+
+
+
+
+
+
+
+
+            <ToggleButton
+                android:id="@+id/ToggleButtonSilent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@android:drawable/ic_lock_silent_mode"
+                android:onClick="doChangeSilentMode"
+                android:text="@string/button_mode_silent"
+                android:textOff="@string/button_mode_silent"
+                android:textOn="@string/button_mode_silent" />
+
+
+
+
+
+
+
+            <ToggleButton
+                android:id="@+id/ToggleButtonVibrate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/phone_vibrate"
+                android:onClick="doChangeVibrateMode"
+                android:text="@string/button_mode_vibrate"
+                android:textOff="@string/button_mode_vibrate"
+                android:textOn="@string/button_mode_vibrate" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textViewConnectivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/connectivity"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+                android:id="@+id/toggleButtonMobileData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_tab_mobilenet_selected"
+                android:onClick="doSwitchMobileData"
+                android:textOff="@string/button_internet_mobile"
+                android:textOn="@string/button_internet_mobile" />
+
+
+
+
+
+
+
+
+
+
+
+
+            <ToggleButton
+                android:id="@+id/toggleButtonWiFi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_tab_wifi_selected"
+                android:onClick="doSwitchWifi"
+                android:textOff="@string/button_internet_wifi"
+                android:textOn="@string/button_internet_wifi" />
+
+
+
+
+
+
+<ToggleButton
+    android:id="@+id/toggleButtonBT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:drawableTop="@drawable/ic_tab_bluetooth_selected"
+    android:onClick="doSwitchBluetooth"
+    android:textOff="@string/button_bluetooth"
+    android:textOn="@string/button_bluetooth" />
+
+        </LinearLayout>
+
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="a150aabc7880a3f"
+            ads:loadAdOnCreate="true" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+
+
+
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/imageButtonScrollUp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doScrollListTop"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@android:drawable/stat_sys_upload" />
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:onClick="doAddNewTask"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="@string/button_add_new" />
+
+
+
+
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/ImageButtonScrollDown"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="doScrollListBottom"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@android:drawable/stat_sys_download" />
+
+    </LinearLayout>
+	
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white" />
+
+
+
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </ListView>
+    
+</LinearLayout>
